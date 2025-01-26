@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <title>Bootstrap 5 Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+            .carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin:auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content: : '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+        </style>
+</head>
+<body>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="pexels-mikhail-nilov-7814569.jpg" class="d-block w-100" alt="..." style="height: 890px;">
+            <div class="carousel-caption text-dark">
+                <h5>Welcome to krish Dental Clinic</h5>
+                <p>Your Smile is Our Priority. Providing Quality Dental Care Since 2003.</p>
+               <p><a href="#" class="btn btn-warning mt3">Learn More</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="pexels-antoni-shkraba-6187566.jpg" class="d-block w-100" alt="..." style="height: 890px;">
+            <div class="carousel-caption">
+                <h5>Our Expert Dental Team</h5>
+                <p>Meet our skilled and caring dental professionals dedicated to your oral health.</p>
+               <p><a href="#" class="btn btn-warning mt3">Learn More</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="ozkan-guner-FPsaA37Uh_w-unsplash.jpg" class="d-block w-100" alt="..." style="height: 890px;">
+            <div class="carousel-caption">
+                <h5>Comprehensive Dental Services</h5>
+                <p>Discover a wide range of dental services to keep your smile healthy and beautiful.</p>
+               <p><a href="#" class="btn btn-warning mt3">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</body>
+</html>
